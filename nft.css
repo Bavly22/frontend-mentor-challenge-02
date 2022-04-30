@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.parent{
+    width: 375px;
+    height: 667px;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: hsl(216, 50%, 16%);
+    width: 320px;
+    height: 525px;
+    border-radius: 15px;
+    padding: 22px;
+    position: relative;
+}
+.hover{
+    position: absolute;
+    width: 276px;
+    height: 276px;
+    border-radius: 13px;
+    background-color: hsl(178, 100%, 50%,50%);
+    z-index: 5007;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.hov{
+    position: absolute;
+    z-index: 500;
+}
+.hover:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.one{
+    position: relative;
+    width: 100%;
+    border-radius: 13px;
+    margin-bottom: 17px;
+}
+
+p:nth-child(3){
+    color: white;
+    font-size: 22px;
+    line-height: 1.6;
+}
+p:nth-child(3):hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+p:nth-child(4){
+    color:  hsl(215, 51%, 70%);
+    font-size: 16px;
+    margin-top: 7px;
+    line-height: 1.5;
+}
+.days img{
+    position: relative;
+    margin-right: 8px;
+    width: 10px;
+    height: 19px;
+}
+.days{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.days span{
+    display: flex;
+    font-size: 14px;
+}
+.days  .two{
+    width: 19px;
+}
+span:nth-child(1){
+    color: hsl(178, 100%, 50%);
+}
+span:nth-child(2){
+    color:hsl(215, 51%, 70%) ;
+}
+hr{
+    border: none;
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+    width: 100%;
+    margin-top: 14px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+}
+footer span {
+    color: white !important;
+    margin-left: 5px;
+}
+footer span:hover{
+    color: hsl(178, 100%, 50%) !important;
+    cursor: pointer;
+}
+footer img{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 29px;
+    margin-right: 15px;
+}
+@media (min-width:750px) {
+    .parent{
+        width: 1440px;
+        height: 800px;
+    }
+}
